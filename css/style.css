@@ -38,8 +38,8 @@ ul {
 }
 
 .container {
-  max-width: 1280px;
-  padding: 0px;
+  max-width: 1300px;
+  padding: 0 10px;
 }
 
 .header {
@@ -71,7 +71,7 @@ ul {
   background-color: var(--dark-color);
 }
 .hero .hero__block {
-  max-width: 45%;
+  max-width: 600px;
   padding-top: 250px;
   padding-bottom: 470px;
 }
@@ -93,6 +93,7 @@ ul {
   padding: 10px 15px;
   line-height: 1.5;
   border-radius: 6px;
+  display: block;
 }
 .hero .block__input {
   border-radius: 6px;
@@ -137,6 +138,9 @@ ul {
 
   .hero-img {
     position: static !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .hero-img .img-1,
 .hero-img .img-2,
@@ -145,6 +149,14 @@ ul {
   }
 }
 @media screen and (max-width: 540px) {
+  .body-usr {
+    width: 80vh;
+  }
+
+  .hero__block {
+    padding: 100px 0px !important;
+  }
+
   .nav-under__nav {
     display: none;
   }
@@ -155,5 +167,10 @@ ul {
 
   .hero-block__input {
     flex-direction: column;
+    align-items: center;
+  }
+  .hero-block__input .btn {
+    margin-top: 10px;
+    width: 60px;
   }
 }
