@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: "../fonts/Roboto-Bold.ttf";
+  src: "../fonts/Roboto-Medium.ttf";
+  src: "../fonts/Roboto-Regular.ttf";
+}
+:root {
+  --dark-color: #1E313B;
+  --violet-color: #794EFF;
+  --white-color: #fff;
+  --orange-color: #FFC147;
+  --green-color: #97E747;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.body-usr {
+  font-family: "Roboto";
+  max-width: 1440px;
+  margin: 0 auto;
+  color: var(--dark-color);
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0px;
+}
+
+.header {
+  padding: 15px 0px;
+}
+.header .nav-under__nav {
+  padding-left: 30px;
+}
+.header .nav-link {
+  color: inherit;
+  font-family: "Roboto";
+  font-size: 16px;
+  padding: 0px 16px;
+}
+.header .logo-link {
+  padding: 0px;
+}
+.header .active {
+  color: var(--violet-color);
+}
+.header .btn-primary {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  border: none;
+  padding: 9px 17px;
+}
+
+.hero {
+  background-color: var(--dark-color);
+}
+.hero .hero__block {
+  max-width: 45%;
+  padding-top: 250px;
+  padding-bottom: 470px;
+}
+.hero .block__h1 {
+  color: var(--white-color);
+  font-size: 38px;
+  line-height: 1.2;
+}
+.hero .block__h1 .h1__span {
+  color: var(--violet-color);
+}
+.hero .block__text {
+  color: var(--white-color);
+  font-size: 18px;
+  line-height: 1.5;
+}
+.hero .btn {
+  background-color: #F6F6F6;
+  padding: 10px 15px;
+  line-height: 1.5;
+  border-radius: 6px;
+}
+.hero .block__input {
+  border-radius: 6px;
+  padding: 10px 42% 10px 25px;
+  margin-right: 18px;
+}
+.hero .hero-img {
+  position: relative;
+}
+.hero .hero-img [class^=img] {
+  display: block;
+  max-width: 100%;
+}
+.hero .hero-img .img-1 {
+  position: absolute;
+  z-index: 3;
+  top: 130px;
+  left: 110px;
+}
+.hero .hero-img .img-2 {
+  position: absolute;
+  z-index: 1;
+  top: 250px;
+  right: 175px;
+}
+.hero .hero-img .img-3 {
+  position: absolute;
+  z-index: 2;
+  top: 415px;
+  left: 85px;
+}
+
+@media screen and (min-width: 540px) {
+  .dropdown {
+    display: none;
+  }
+}
+@media screen and (max-width: 960px) {
+  .hero__block {
+    padding-bottom: 100px !important;
+  }
+
+  .hero-img {
+    position: static !important;
+  }
+  .hero-img .img-1,
+.hero-img .img-2,
+.hero-img .img-3 {
+    position: static !important;
+  }
+}
+@media screen and (max-width: 540px) {
+  .nav-under__nav {
+    display: none;
+  }
+
+  .dropdown {
+    display: block;
+  }
+}
