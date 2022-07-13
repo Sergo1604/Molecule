@@ -1,9 +1,4 @@
-@font-face {
-  font-family: "Roboto", sans-serif;
-  src: "../fonts/Roboto-Bold.ttf";
-  src: "../fonts/Roboto-Medium.ttf";
-  src: "../fonts/Roboto-Regular.ttf";
-}
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins&family=Roboto:wght@400;700;900&display=swap");
 :root {
   --dark-color: #1E313B;
   --violet-color: #794EFF;
@@ -69,6 +64,7 @@ ul {
 
 .hero {
   background-color: var(--dark-color);
+  padding-bottom: 100px;
 }
 .hero .hero__block {
   max-width: 600px;
@@ -100,26 +96,26 @@ ul {
   padding: 10px 235px 10px 25px;
   margin-right: 18px;
 }
-.hero .hero-img {
+.hero .hero__img {
   position: relative;
 }
-.hero .hero-img [class^=img] {
+.hero .hero__img [class^=img] {
   display: block;
   max-width: 100%;
 }
-.hero .hero-img .img-1 {
+.hero .hero__img .img-1 {
   position: absolute;
   z-index: 3;
   top: 130px;
   left: 110px;
 }
-.hero .hero-img .img-2 {
+.hero .hero__img .img-2 {
   position: absolute;
   z-index: 1;
   top: 250px;
   right: 175px;
 }
-.hero .hero-img .img-3 {
+.hero .hero__img .img-3 {
   position: absolute;
   z-index: 2;
   top: 415px;
@@ -130,26 +126,91 @@ ul {
   margin-bottom: 30px;
 }
 
+.features {
+  padding-top: 130px;
+}
+.features .cards__btn {
+  font-size: 16px;
+  background-color: rgba(255, 193, 71, 0.6);
+  border: 2px solid var(--orange-color);
+  padding: 2px 30px;
+  border-radius: 100px;
+  letter-spacing: 1px;
+  margin-bottom: 21px;
+}
+.features .cards__h2 {
+  font-weight: bold;
+}
+.features .cards__text {
+  padding: 2em 0em;
+}
+.features .h2__span {
+  color: var(--orange-color);
+}
+.features .item__title1::before {
+  content: url(../img/ficon1.svg);
+  padding-right: 0.5em;
+  align-self: flex-end;
+}
+.features .item__title1 {
+  color: var(--orange-color);
+  display: flex;
+}
+.features .item__text {
+  padding-left: 2.5em;
+}
+.features .item {
+  padding: 0.5em;
+}
+.features .item__title2::before {
+  content: url(../img/ficon2.svg);
+  padding-right: 0.5em;
+  align-self: flex-end;
+}
+.features .item__title2 {
+  color: var(--orange-color);
+  display: flex;
+}
+.features .item__text {
+  padding-left: 2.5em;
+}
+.features .item {
+  padding: 0.5em;
+}
+.features .item__title3::before {
+  content: url(../img/ficon3.svg);
+  padding-right: 0.5em;
+  align-self: flex-end;
+}
+.features .item__title3 {
+  color: var(--orange-color);
+  display: flex;
+}
+.features .item__text {
+  padding-left: 2.5em;
+}
+.features .item {
+  padding: 0.5em;
+}
+.features .item__title4::before {
+  content: url(../img/ficon4.svg);
+  padding-right: 0.5em;
+  align-self: flex-end;
+}
+.features .item__title4 {
+  color: var(--orange-color);
+  display: flex;
+}
+.features .item__text {
+  padding-left: 2.5em;
+}
+.features .item {
+  padding: 0.5em;
+}
+
 @media screen and (min-width: 540px) {
   .dropdown {
     display: none;
-  }
-}
-@media screen and (max-width: 960px) {
-  .hero__block {
-    padding-bottom: 100px !important;
-  }
-
-  .hero-img {
-    position: static !important;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .hero-img .img-1,
-.hero-img .img-2,
-.hero-img .img-3 {
-    position: static !important;
   }
 }
 @media screen and (max-width: 540px) {
@@ -163,7 +224,7 @@ ul {
 
   .block__input {
     border-radius: 6px;
-    padding: 10px 42% 10px 25px;
+    padding: 10px 40% 10px 25px;
     margin-right: 18px;
   }
 
@@ -182,5 +243,24 @@ ul {
   .hero-block__input .btn {
     margin-top: 10px;
     width: 60px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .hero__block {
+    padding-bottom: 100px !important;
+    padding-top: 100px !important;
+    margin: 0px auto;
+  }
+
+  .hero__img {
+    position: static !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero__img .img-1,
+.hero__img .img-2,
+.hero__img .img-3 {
+    position: static !important;
   }
 }
