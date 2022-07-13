@@ -97,7 +97,7 @@ ul {
 }
 .hero .block__input {
   border-radius: 6px;
-  padding: 10px 42% 10px 25px;
+  padding: 10px 235px 10px 25px;
   margin-right: 18px;
 }
 .hero .hero-img {
@@ -124,6 +124,10 @@ ul {
   z-index: 2;
   top: 415px;
   left: 85px;
+}
+.hero .saas {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 540px) {
@@ -154,7 +158,13 @@ ul {
   }
 
   .hero__block {
-    padding: 100px 0px !important;
+    padding: 100px 10px !important;
+  }
+
+  .block__input {
+    border-radius: 6px;
+    padding: 10px 42% 10px 25px;
+    margin-right: 18px;
   }
 
   .nav-under__nav {
