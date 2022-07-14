@@ -129,6 +129,20 @@ ul {
 
 .features {
     padding-top: 130px;
+    .features__img {
+        position: relative;
+        .img-4 {
+            position: absolute;
+            z-index: 0;
+            bottom: 50px;
+        }
+        .img-5 {
+            position: absolute;
+            z-index: 1;
+            top: 250px;
+            left: 245px;
+        }
+    }
     .cards__btn {
         font-size: 16px;
         background-color: rgba(255, 193, 71, 60%);
@@ -163,6 +177,144 @@ ul {
         }
         .item {
             padding: 0.5em;
+        }
+    }
+}
+
+.stats {
+    background-color: #f6f6f6;
+    padding: 140px 0px;
+    .stats__btn {
+        background-color: rgba(151, 231, 71, 60%);
+        border: 2px solid --green-color;
+        border-radius: 100px;
+        padding: 3px 30px;
+    }
+    .stats__title {
+        margin-top: 1em;
+    }
+    .title__span {
+        color: var(--green-color);
+        padding-left: 0.5em;
+    }
+    .stats__text {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    .items__text__1:before {
+        content: '87%';
+        font-size: 48px;
+        color: var(--green-color);
+    }
+    .items__text__2:before {
+        content: '99%';
+        font-size: 48px;
+        color: var(--green-color);
+    }
+    .items__text__1,
+    .items__text__2 {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.team {
+    padding: 125px 0px;
+    .img__group__1 {
+        height: 630px;
+    }
+    .team__btn {
+        padding: 3px 30px;
+        background-color: rgba(121, 78, 255, 0.6);
+        border-radius: 100px;
+        border: 2px solid --violet-color;
+        color: var(--white-color);
+        margin: 15px 0px;
+    }
+    .team__title {
+        line-height: 1em;
+        margin: 15px 0px;
+    }
+    .title__span {
+        color: var(--violet-color);
+    }
+    .team__text {
+        font-size: 18px;
+        line-height: 1.5;
+        margin: 15px 0px;
+    }
+    .meet__btn {
+        border: 2px solid --violet-color;
+        background-color: rgba(121, 78, 255, 0.6);
+        color: var(--white-color);
+        padding: 17px 19px;
+        margin: 15px 0px;
+    }
+}
+
+.think {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    padding: 100px 0px;
+    .think__block>* {
+        margin: 15px 0px;
+    }
+    .btn__group {
+        width: 262px;
+    }
+    .btn__group>* {
+        font-size: 16px;
+        padding: 13px 19px;
+        border-radius: 6px;
+    }
+    .btn__left {
+        background-color: var(--violet-color);
+        color: var(--white-color);
+    }
+    .btn__right {
+        background-color: var(--white-color);
+    }
+    .btn__right:hover,
+    .btn__right:active {
+        background-color: var(--white-color);
+        color: var(--dark-color);
+    }
+}
+
+.steps {
+    padding: 115px 0px;
+    .btn__steps {
+        background-color: rgba(255, 193, 71, 60%);
+        border: 2px solid --orange-color;
+        padding: 3px 15px;
+        border-radius: 100px;
+    }
+    .steps__block>* {
+        margin: 15px 0px;
+    }
+    .steps__title {
+        font-weight: bold;
+        line-height: 1;
+    }
+    .get__btn {
+        background-color: var(--dark-color);
+        color: var(--white-color);
+    }
+    .item {
+        padding: 35px 0px;
+    }
+    .item__text {
+        margin-left: 5em;
+    }
+    @for $i from 1 through 3 {
+        .item__title__#{$i} {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+        }
+        .item__title__#{$i}::before {
+            content: url(../img/step_icon_#{$i}.svg);
+            padding-right: 1em;
         }
     }
 }
@@ -217,5 +369,23 @@ ul {
         .img-3 {
             position: static!important;
         }
+    }
+    .features__img {
+        position: static!important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .img-4,
+        .img-5 {
+            position: static!important;
+        }
+    }
+    .cards__btn {
+        display: block;
+        margin: 2em auto;
+    }
+    .cards__h2 {
+        text-align: center;
+        margin: 1em 0em;
     }
 }
