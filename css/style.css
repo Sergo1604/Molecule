@@ -376,6 +376,67 @@ ul {
   padding-right: 1em;
 }
 
+.chill-industries {
+  padding: 130px 0px;
+}
+.chill-industries .ch-in__svg {
+  margin: 0px auto;
+}
+.chill-industries .ch-in__title {
+  text-align: center;
+  padding: 35px 220px;
+}
+.chill-industries .carousel-indicators {
+  top: 200px;
+}
+.chill-industries .carousel-indicators li {
+  margin: 3px;
+  opacity: 60%;
+}
+.chill-industries .carousel-indicators .active {
+  opacity: 1;
+}
+.chill-industries .carousel-caption {
+  color: var(--violet-color);
+  right: calc(100%);
+}
+.chill-industries .carousel-item__photo {
+  padding-left: calc(50% - 40px);
+  padding-bottom: 20px;
+}
+.chill-industries .carousel-item__text p {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.sign-up {
+  background-color: var(--violet-color);
+  padding: 90px 10px;
+}
+.sign-up .container {
+  background-color: var(--white-color);
+  border-radius: 48px;
+  padding: 100px 95px;
+}
+.sign-up .sign-up__btn {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  padding: 10px 15px;
+}
+.sign-up .sign-up__terms {
+  font-size: 12px;
+}
+.sign-up .sign-up__link {
+  color: var(--violet-color);
+  text-decoration: none;
+}
+.sign-up .sign-up__form {
+  border-radius: 6px;
+}
+.sign-up .sign-up__form__block {
+  padding-bottom: 17px;
+}
+
 @media screen and (min-width: 540px) {
   .dropdown {
     display: none;

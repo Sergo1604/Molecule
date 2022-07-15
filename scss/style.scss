@@ -319,6 +319,67 @@ ul {
     }
 }
 
+.chill-industries {
+    padding: 130px 0px;
+    .ch-in__svg {
+        margin: 0px auto;
+    }
+    .ch-in__title {
+        text-align: center;
+        padding: 35px 220px;
+    }
+    .carousel-indicators {
+        top: 200px;
+        li {
+            margin: 3px;
+            opacity: 60%;
+        }
+        .active {
+            opacity: 1;
+        }
+    }
+    .carousel-caption {
+        color: var(--violet-color);
+        right: calc(100%);
+    }
+    .carousel-item__photo {
+        padding-left: calc(50% - 40px);
+        padding-bottom: 20px;
+    }
+    .carousel-item__text p {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+.sign-up {
+    background-color: var(--violet-color);
+    padding: 90px 10px;
+    .container {
+        background-color: var(--white-color);
+        border-radius: 48px;
+        padding: 100px 95px;
+    }
+    .sign-up__btn {
+        background-color: var(--dark-color);
+        color: var(--white-color);
+        padding: 10px 15px;
+    }
+    .sign-up__terms {
+        font-size: 12px;
+    }
+    .sign-up__link {
+        color: var(--violet-color);
+        text-decoration: none;
+    }
+    .sign-up__form {
+        border-radius: 6px;
+    }
+    .sign-up__form__block {
+        padding-bottom: 17px;
+    }
+}
+
 @media screen and (min-width:540px) {
     .dropdown {
         display: none;
